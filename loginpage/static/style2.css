@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+
+    width:100%;
+    height:100vh;
+    font-family:Arial, sans-serif;
+    background:#bab6c5a2 ;
+    color:rgb(51, 45, 45) ;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.card{
+    width:300px;
+    height:450px;
+    box-shadow:0 0 40px 20px rgba(16, 15, 15, 0.26);
+    font-family:Arial, sans-serif;;
+    background-position:center;
+    background-size:cover;
+    padding: 16px;
+    box-sizing:content-box;
+    backface-visibility: hidden;
+}
+
+.inner-box{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.input-box{
+    width:70%;
+    background: transparent;
+    border: 1px solid #131313;
+    font-family:Arial, sans-serif;
+    margin:40px 0 5px;
+    height:32px;
+    border-radius:25px;
+    padding:0 20px;
+    box-sizing:border-box;
+    outline:none;
+    text-align:center;
+    text-decoration-color: black;
+    color: black;
+    position: center;
+
+}
+::placeholder{
+    color:#2a2828;
+    font-size:12px;
+}
+button{
+    width:50%;
+    background:grey;
+    border:1px solid #0d0c0c;
+    margin:45px 0 10px;
+    height:30px;
+    font-family:Arial, sans-serif;
+    font-size:bold 100px;
+    border-radius:15px;
+    padding:0 8px;
+    box-sizing:content-box;
+    outline:#0d0c0c;
+    color:#0d0c0c;;
+    cursor:pointer;
+
+}
+.card{
+  font-weight:normal;
+  font-size:14px;
+  text-align:center;
+  margin-bottom:20px;
+}
+
+nav
+{
+   overflow: hidden;
+   background:rgb(20, 20, 94);
+   line-height:40px;
+}
+
+nav a{
+    float:left;
+    display:block;
+    width:1400px;
+    color:aliceblue;
+    text-align: right;
+}
+nav logo p{
+    font-size:30px;
+    font-weight:bold;
+    float:left;
+    color:rgb(99, 99, 60);
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    cursor:pointer;
+
+}
+
+nav ul{
+    float:right;
+}
+nav li{
+    display:inline-black;
+    list-style:none;
+}
+.messages{
+    font-size:14px;
+    
+}

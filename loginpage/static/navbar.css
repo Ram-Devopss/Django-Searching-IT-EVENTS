@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+nav
+{
+   overflow: hidden;
+   background:rgb(114, 112, 137);
+   line-height:40px;
+}
+
+nav a{
+    float:left;
+    display:block;
+    width:1400px;
+    color:black;
+    text-align: right;
+    
+}
+nav logo p{
+    font-size:30px;
+    font-weight:bold;
+    float:left;
+    color:rgb(84, 84, 74);
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    cursor:pointer;
+
+}
+
+nav ul{
+    float:right;
+}
+nav li{
+    display:inline-black;
+    list-style:none;
+}
+

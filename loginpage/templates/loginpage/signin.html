@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<!--[if it IE 7]>        <html class="no -js It-ie9 It-ie8 It-ie7"><![endif]-->
+<!--[if IE 7]>           <html class="no -js It-ie9 It-ie8"><![endif]-->
+<!--[if IE 8]>           <html class="no -js It-ie9"><![endif]-->
+<!--[if gt IE 8]>        <html class="no -js"><!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equive="X-UA-Compatible" content="IE=edge">
+  <title>loginpage</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="static/style3.css">
+
+</head>
+
+<body>
+  <nav>
+    <link rel="stylesheet" href="static/navbar.css">
+
+    <a class="active" href="/signout">Signout</a>
+
+  </nav>
+
+  <form action="/signin" method="POST">
+    {% csrf_token %}
+    <div class="container">
+      <div class="card">
+        <div class="messages">
+          {%for message in messages%}
+
+          <strong>{{message}}</strong><a class="active" href="/signin">Close</a>
+
+
+          {%endfor%}
+        </div>
+        <style>
+          h1 {
+            color: black;
+          }
+        </style>
+        <u>
+          <h1>Welcome</h1>
+        </u>
+
+        <style>
+          hr {
+            border: none;
+            border-top: 2px solid black;
+            margin: 30px 0;
+          }
+
+          .box {
+            border: 1px solid black;
+            box-shadow: 0px 10px 10px gray;
+            border-radius: 20px;
+            background-color: white;
+            width: fit-content;
+            height: fit-content;
+            padding: 5%;
+          }
+
+          ul {
+            display: flex;
+          }
+
+          li {
+            list-style: none;
+            font-weight: 500;
+            padding-inline-end: 2%;
+
+          }
+
+          li:hover {
+            color: red;
+            font-size: large;
+           
+
+          }
+          ul:hover{
+           background-color: gray;
+           cursor: grab;
+          }
+          .in-box
+          {
+            border: 1px solid black;
+            box-shadow: 0px 10px 10px gray;
+            border-radius: 20px;
+            background-color: white;
+            width: fit-content;
+            height: fit-content;
+            padding: 3%;
+          }
+
+          .in-box > small p 
+          {
+            width: fit-content;
+            height: fit-content;
+            padding: 3%;
+          }
+          .in-box > small > p > a
+          {
+            color: black;
+          }
+        </style>
+
+        </head>
+
+
+        <body>
+          <div class="nav-re">
+
+
+            <a href="nav-res.html"> Nav</a>
+          </div>
+          <div class="box">
+            <br>
+            <h3 class="heading">
+              GOV WEBSITE
+            </h3>
+<br>
+<br>
+            <ul>
+
+              <!--
+
+                IIT
+              -->
+              <li>
+                <div class="in-box">
+                  <h3>
+                    IIT
+                  </h3>
+               
+                  <small>
+                    <p><a href="/iit">Click here to view the Circulars</a></p>
+                  </small>
+                </div>
+              </li>
+
+<!--AICTE-->
+
+<li>
+  <div class="in-box">
+    <h3>
+      AICTE
+    </h3>
+ 
+    <small>
+      <p><a href="/AICTE">Click here to view the Circulars</a></p>
+    </small>
+  </div>
+</li>
+
+<!---SIH-->
+
+
+<li>
+  <div class="in-box">
+    <h3>
+      NCS
+    </h3>
+ 
+    <small>
+      <p><a href="/NCS">Click here to view the Circulars</a></p>
+    </small>
+  </div>
+</li>
+
+</div>
+<!---ENd-->
+
+
+   <br>
+   <label style="color: gray;" for="br-line">-----------------------------------------------------------</label>
+   <br>
+<br>
+
+
+<!--- Private-->
+<div class="box">
+  <br>
+  <h3 class="heading">
+    PRIVATE WEBSITE
+  </h3>
+<br>
+<br>
+  <ul>
+
+    <!--
+
+      IIT
+    -->
+    <li>
+      <div class="in-box">
+        <h3>
+          TCS
+        </h3>
+     
+        <small>
+          <p><a href="/TCS">Click here to view the Circulars</a></p>
+        </small>
+      </div>
+    </li>
+
+<!--AICTE-->
+
+<li>
+<div class="in-box">
+<h3>
+INFOSYS
+</h3>
+
+<small>
+<p><a href="/INFO">Click here to view the Circulars</a></p>
+</small>
+</div>
+</li>
+
+<!---SIH-->
+
+
+<li>
+<div class="in-box">
+<h3>
+WIPRO
+</h3>
+
+<small>
+<p><a href="/aigov">Click here to view the Circulars</a></p>
+</small>
+</div>
+</li>
+
+
+<!---ENd-->
+
+
+  </ul>
+</div>
+
+
+
+
+<!---End-->
+
+
+      <!-- Add more options as needed -->
+
+  </form>
+  <script src="" async defer></script>
+
+</body>
+
+</html>

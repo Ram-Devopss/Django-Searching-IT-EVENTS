@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--[if it IE 7]>        <html class="no -js It-ie9 It-ie8 It-ie7"><![endif]-->
+<!--[if IE 7]>           <html class="no -js It-ie9 It-ie8"><![endif]-->
+<!--[if IE 8]>           <html class="no -js It-ie9"><![endif]-->
+<!--[if gt IE 8]>        <html class="no -js"><!--<![endif]-->
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <meta http-equive="X-UA-Compatible" content="IE=edge">
+        <title>loginpage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <link rel="stylesheet" href="static/style1.css">
+        
+    </head>
+    
+    <body>
+        <nav>
+            <link rel="stylesheet" href="static/navbar.css">
+              
+           
+            <a class="active" href="/">Home</a>
+           
+            </nav>
+
+        <form action="/log" method="POST">
+            {% csrf_token %}
+            <div class="container">
+            <div class="card">
+                <div class="messages">
+                    {%for message in messages%}
+                    
+                        <strong>{{message}}</strong><a class="active" href="/log">Close</a>
+                                          
+                     
+                        {%endfor%}</div>
+            <h1>Login</h1>
+            <label for="username"></label>
+            <input type="text" id="username" name="username" class=input-box placeholder=" Enter Your Username"Required>
+            
+            <br>
+            <input type="password" id="pass1" name="pass1" class=input-box placeholder="Enter Your Password"Required>
+            <br>
+            
+        
+        <button type="submit"><b>Login</b></a></button>
+        <div class="para1">
+            <br><p> Forgot Password ?<a href="/passchange"></p>Click here</a></div>
+            <div class="para2">
+            <br><p> Don't have an account?<a href="/signup">Sign Up</a></p></div>
+            
+            </form>
+        
+        <script src="" async defer></script>
+    </div></div></div>
+    </body>
+    </html>

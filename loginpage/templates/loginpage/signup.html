@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!--[if it IE 7]>        <html class="no -js It-ie9 It-ie8 It-ie7"><![endif]-->
+<!--[if IE 7]>           <html class="no -js It-ie9 It-ie8"><![endif]-->
+<!--[if IE 8]>           <html class="no -js It-ie9"><![endif]-->
+<!--[if gt IE 8]>        <html class="no -js"><!--<![endif]-->
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <meta http-equive="X-UA-Compatible" content="IE=edge">
+        <title>loginpage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <link rel="stylesheet" href="static/style1.css">
+        
+    </head>
+    
+    <body>
+        <nav>
+            <link rel="stylesheet" href="static/navbar.css">
+           
+           
+            <a class="active" href="/">Home</a>
+            
+            </nav>
+
+        <form action="/signup" method="POST">
+            {% csrf_token %}
+            <div class="container">
+            <div class="card">
+                <div class="messages">
+                    {%for message in messages%}
+                    
+                        <strong>{{message}}</strong><a class="active" href="/signup">Close</a>
+                                          
+                     
+                        {%endfor%}</div>
+            <h1>Register Form</h1>
+            <label for="username"></label>
+            <input type="text" id="username" name="username" class=input-box placeholder=" UserName(4 to 10 Characters)"Required>
+            <br>
+            <input type="text" id="name" name="name" class=input-box placeholder="Enter Your Name"Required>
+            <br>
+            <input type="email" id="email" name="email" class=input-box placeholder="Enter Your Email Address"Required>
+            <br>
+            <input type="password" id="pass1" name="pass1" class=input-box placeholder="Password(5 to 10 characters)"Required>
+            <br>
+            <input type="Password" id="pass2" name="pass2" class=input-box placeholder="Re-Enter Your Password to confirm"Required>
+            <br>
+        
+        <button type="submit"><b>Submit</b></button>
+            </form>
+        
+        <script src="" async defer></script>
+
+    </body>
+    </html>
